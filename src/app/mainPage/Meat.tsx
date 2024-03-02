@@ -18,7 +18,7 @@ const Meat = () => {
     <Grid container spacing={1}>
       <Grid item xl={6} md={6} lg={6} sm={12} className="relative">
         <div className="static lg:fixed">
-        <Box className="w-full p-14 flex flex-col items-start">
+        <Box className="w-full md:p-14 p-4 flex flex-col items-start">
           <h1 className="text-white">Sarthak Bhatt</h1>
 
           <h3 className="text-white">Unemployed engineer currently</h3>
@@ -47,7 +47,7 @@ const Meat = () => {
               </span>
             </div>
           </Box>
-          <Box className="my-10 w-full sm:p-14 px-14  flex gap-6 ">
+          <Box className="my-10 w-full md:p-14 p-4  flex gap-6 ">
             <GitHubIcon className="text-white cursor-pointer" />
             <LinkedInIcon className="text-white cursor-pointer" />
             <MenuBookIcon className="text-white cursor-pointer" />
@@ -56,8 +56,10 @@ const Meat = () => {
           </Box>
           </div>
       </Grid>
-      <Grid item xl={6} md={6} lg={6} sm={12}style={{ width:"100%" }}>
-        <Box className="w-full p-14 flex flex-col items-start">
+      <Grid item xl={6} md={6} lg={6} sm={12} style={{ width: "100%", padding: "0px" }}>
+        
+                      <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">About</span>
+        <Box className="w-full md:p-14 p-4 flex flex-col items-start ">
           <p style={{ color: "#7B899D" }} className="p-2">
             I first started programming in java in my 10th grade, 11 and 12th
             were spent on C and C++
@@ -72,13 +74,16 @@ const Meat = () => {
             movies and take long walks
           </p>
         </Box>
+
+         <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">Experiance</span>
         <Box
-          className="w-full p-14 flex flex-col items-start cursor-pointer mb-4"
+          className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
           sx={{
             "&:hover": {
               boxShadow:
                 "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
               backgroundColor: "rgba(255, 255, 255, 0.008)",
+              width:"100%"
             },
              "@media(max-width:600px)": {
               padding:"0px"
@@ -91,7 +96,7 @@ const Meat = () => {
               flexDirection: "column",
               
           }}}>
-            <p>2023-2024</p>
+            <p className="w-100 whitespace-nowrap">2023-2024</p>
 
             <Box>
               <div className="flex text-white font-bold mb-2 gap-2">
@@ -109,7 +114,7 @@ const Meat = () => {
                   creating ui for Canteen services department of india
                 </p>
 
-                <div className="flex gap-2 p-1 my-3">
+                <div className="flex gap-2 p-1 my-3 flex-wrap">
                   <Button variant="outlined">Javascript</Button>
                   <Button variant="outlined">Typescript</Button>
                   <Button variant="outlined">Jest </Button>
@@ -120,7 +125,7 @@ const Meat = () => {
           </Box>
         </Box>
 
-        <Box className="w-full p-14 flex gap-2 mb-4">
+        <Box className="w-full md:p-14 p-6 flex gap-2 mb-4">
           <p className="font-bold text-white cursor-pointer">
             View Full Resume
           </p>
@@ -128,9 +133,9 @@ const Meat = () => {
           <ArrowOutwardIcon sx={{ color: "#fff" }} />
         </Box>
 
-       
+       <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">Projects</span>
           <Box
-            className="flex flex-col items-start cursor-pointer mb-4 w-full p-14"
+            className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
             sx={{
               "&:hover": {
                 boxShadow:
@@ -138,8 +143,14 @@ const Meat = () => {
                 backgroundColor: "rgba(255, 255, 255, 0.008)",
               },
             }}
-          >
-            <Box className="flex gap-3 text-white">
+        >
+           
+            <Box className="flex gap-3 text-white"  sx={{
+            "@media(max-width:600px)": {
+              display: "flex",
+              flexDirection: "column",
+              
+          }}}>
              <Image src={ beer} alt="nqueens" style={{width:"100px",height:"80px"}} />
 
 
@@ -155,7 +166,7 @@ const Meat = () => {
                     infinite scroll and lazy routing
                   </p>
 
-                  <div className="flex gap-2 p-1 my-3">
+                  <div className="flex gap-2 p-1 my-3 flex-wrap">
                     <Button variant="outlined">React JS</Button>
                     <Button variant="outlined">Typescript</Button>
                     <Button variant="outlined">SASS </Button>
@@ -167,7 +178,7 @@ const Meat = () => {
         
      
           <Box
-            className="w-full p-14 flex flex-col items-start cursor-pointer mb-4"
+            className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
             sx={{
               "&:hover": {
                 boxShadow:
@@ -176,7 +187,12 @@ const Meat = () => {
               },
             }}
           >
-            <Box className="flex gap-3 text-white">
+            <Box className="flex gap-3 text-white"  sx={{
+            "@media(max-width:600px)": {
+              display: "flex",
+              flexDirection: "column",
+              
+          }}}>
             <Image src={ nqueens} alt="nqueens" style={{width:"100px",height:"80px"}} />
 
               <Box>
@@ -190,7 +206,7 @@ const Meat = () => {
                    Implemented a visualiztion of the  famous n-queens Problem
                   </p>
 
-                  <div className="flex gap-2 p-1 my-3">
+                  <div className="flex gap-2 p-1 my-3 flex-wrap">
                     <Button variant="outlined">React JS</Button>
                     <Button variant="outlined">Javascript</Button>
                     <Button variant="outlined">SASS </Button>
@@ -201,7 +217,7 @@ const Meat = () => {
         </Box>
         
 
-        <p className="w-full p-14" style={{ color: "#7B899D" }}>
+        <p className="w-full p-14 md:text-base text-sm" style={{ color: "#7B899D" }}>
 
           Made on Visual Studio, Built with Next js and Tailwind, Deployed with Netlify
           </p>
