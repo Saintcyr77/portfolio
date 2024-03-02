@@ -12,8 +12,14 @@ import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import beer from '../assets/beer.png';
 import nqueens from '../assets/nqueens.png';
 import Image from 'next/image';
+import About from "../ClientComonents/About";
+import Experiance from "../ClientComonents/Experiance";
+import Project from "../ClientComonents/Project";
+
 
 const Meat = () => {
+
+
   return (
     <Grid container spacing={1}>
       <Grid item xl={6} md={6} lg={6} sm={12} className="relative">
@@ -31,20 +37,20 @@ const Meat = () => {
         <Box className="flex flex-col sm:content-between content-start">
           <Box className="my-10 w-full p-14 flex flex-col  hidden sm:block ">
             <div className="flex content-center mb-5">
-              <hr className="text-white my-2 mr-3" style={{ width: "60px" }} />
-              <span className="text-white cursor-pointer font-bold">About</span>
+                <hr className="text-white my-2 mr-3" style={{ width: "60px" }} />
+                
+               
+
+            <About/>
+              
             </div>
             <div className="flex content-center mb-5">
               <hr className="text-white my-2 mr-3" style={{ width: "60px" }} />
-              <span className="text-white cursor-pointer font-bold">
-                Experiance
-              </span>
+             <Experiance/>
             </div>
             <div className="flex content-center">
               <hr className="text-white my-2 mr-3" style={{ width: "60px" }} />
-              <span className="text-white cursor-pointer font-bold">
-                Project
-              </span>
+             <Project/>
             </div>
           </Box>
           <Box className="my-10 w-full md:p-14 p-4  flex gap-6 ">
@@ -59,7 +65,7 @@ const Meat = () => {
       <Grid item xl={6} md={6} lg={6} sm={12} style={{ width: "100%", padding: "0px" }}>
         
                       <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">About</span>
-        <Box className="w-full md:p-14 p-4 flex flex-col items-start ">
+        <Box className="w-full md:p-14 p-4 flex flex-col items-start " id="about">
           <p style={{ color: "#7B899D" }} className="p-2">
             I first started programming in java in my 10th grade, 11 and 12th
             were spent on C and C++
@@ -78,7 +84,8 @@ const Meat = () => {
         <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">Experiance</span>
         <a href="https://credextechnology.com/">
         <Box
-          className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
+            className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
+            id="exp"
           sx={{
             "&:hover": {
               boxShadow:
@@ -139,6 +146,7 @@ const Meat = () => {
         <a href="https://beer-app-proj.netlify.app/">
           <Box
             className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
+            id="project"
             sx={{
               "&:hover": {
                 boxShadow:
