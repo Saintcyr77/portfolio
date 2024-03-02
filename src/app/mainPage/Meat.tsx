@@ -75,7 +75,8 @@ const Meat = () => {
           </p>
         </Box>
 
-         <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">Experiance</span>
+        <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">Experiance</span>
+        <a href="https://credextechnology.com/">
         <Box
           className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
           sx={{
@@ -123,7 +124,8 @@ const Meat = () => {
               </div>
             </Box>
           </Box>
-        </Box>
+          </Box>
+          </a>
 
         <Box className="w-full md:p-14 p-6 flex gap-2 mb-4">
           <p className="font-bold text-white cursor-pointer">
@@ -133,7 +135,8 @@ const Meat = () => {
           <ArrowOutwardIcon sx={{ color: "#fff" }} />
         </Box>
 
-       <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">Projects</span>
+        <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">Projects</span>
+        <a href="https://beer-app-proj.netlify.app/">
           <Box
             className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
             sx={{
@@ -151,7 +154,7 @@ const Meat = () => {
               flexDirection: "column",
               
           }}}>
-             <Image src={ beer} alt="nqueens" style={{width:"100px",height:"80px"}} />
+             <Image src={ beer} alt="beer" style={{width:"100px",height:"80px"}} />
 
 
               <Box>
@@ -175,7 +178,9 @@ const Meat = () => {
               </Box>
             </Box>
           </Box>
-        
+        </a>
+
+        <a href="https://nqueens-viz.netlify.app/">
      
           <Box
             className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
@@ -214,7 +219,8 @@ const Meat = () => {
                 </div>
               </Box>
             </Box>
-        </Box>
+          </Box>
+          </a>
         
 
         <p className="w-full p-14 md:text-base text-sm" style={{ color: "#7B899D" }}>
