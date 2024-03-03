@@ -5,15 +5,24 @@ import React, {ReactNode} from "react";
 const GradientPosition = () => {
 
     const [ mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
-    const windowWidth = window.innerHeight
+    let windowWidth:any;
+    if (typeof window !== 'undefined') {
+         windowWidth = window.innerHeight;
+    }
 
     React.useEffect(() => {
         const updateMousePosition = (ev:any) => {
             setMousePosition({ x: ev.clientX, y: ev.clientY });
         };
-        window.addEventListener('mousemove', updateMousePosition);
+        if (typeof window !== 'undefined') {
+            
+            window.addEventListener('mousemove', updateMousePosition);
+        }
         return () => {
-            window.removeEventListener('mousemove', updateMousePosition);
+            if (typeof window !== 'undefined') {
+                
+                window.removeEventListener('mousemove', updateMousePosition);
+            }
         };
     }, []);
 
