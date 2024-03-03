@@ -95,9 +95,7 @@ const Meat = () => {
                 backgroundColor: "rgba(255, 255, 255, 0.008)",
                 width: "100%",
               },
-              "@media(max-width:600px)": {
-                padding: "0px",
-              },
+             
             }}
           >
             <Box
