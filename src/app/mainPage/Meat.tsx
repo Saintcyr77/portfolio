@@ -16,7 +16,9 @@ import About from "../ClientComonents/About";
 import Experiance from "../ClientComonents/Experiance";
 import Project from "../ClientComonents/Project";
 
+
 const Meat = () => {
+  
   return (
     <Grid container spacing={1}>
       <Grid item xl={6} md={6} lg={6} sm={12} className="relative">
@@ -137,13 +139,16 @@ const Meat = () => {
           </Box>
         </a>
 
+          <a href="/resume.pdf">
         <Box className="w-full md:p-14 p-6 flex gap-2 mb-4">
+
           <p className="font-bold text-white cursor-pointer">
             View Full Resume
           </p>
 
           <ArrowOutwardIcon sx={{ color: "#fff" }} />
         </Box>
+          </a>
 
         <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">
           Projects
