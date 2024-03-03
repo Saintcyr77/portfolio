@@ -4,18 +4,26 @@ import Image from "next/image";
 import Meat from "./mainPage/Meat";
 import Gradientdiv from "./ClientComonents/Gradientdiv";
 
-
-export const UserContext = React.createContext<any>(undefined);
-export default function Home() {
 type State = {
   count: string;
 };
 
-
+const initialState: State = { count: "abt" };
+const initialContextValue: UserContextType = {
+  state: initialState,
+  dispatch: () => {},
+};
 type Action =
   | { type: 'exp'; payload: string }
   | { type: 'pro'; payload: string }
   |   { type: 'abt'; payload: string }
+type UserContextType = {
+  state: State;
+  dispatch: React.Dispatch<Action>;
+};
+
+export const UserContext = React.createContext<UserContextType>(initialContextValue);
+export default function Home() {
 
 
 const reducer = (state: State, action: Action): State => {
@@ -28,7 +36,7 @@ const reducer = (state: State, action: Action): State => {
       return { ...state, count: action.payload };;
   }
 };
-   const initialState: State = { count: "abt" };
+ 
 
 
   const [state, dispatch] = useReducer(reducer, initialState);
