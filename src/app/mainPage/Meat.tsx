@@ -26,7 +26,7 @@ const Meat = () => {
           <Box className="w-full md:p-14 p-4 flex flex-col items-start">
             <h1 className="text-white">Sarthak Bhatt</h1>
 
-            <h3 className="text-white">Unemployed engineer currently</h3>
+            <h3 className="text-white">Engineer with 1 year experiance </h3>
 
             <p style={{ color: "#7B899D" }}>
               I build pixel-perfect, engaging, and accessible digital
