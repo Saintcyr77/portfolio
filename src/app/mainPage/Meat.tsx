@@ -43,9 +43,18 @@ const Meat = () => {
               <Project />
             </Box>
             <Box className="my-10 w-full md:p-14 p-4  flex gap-6 ">
+              <a href="https://github.com/Saintcyr77">
+
               <GitHubIcon className="text-white cursor-pointer" />
+              </a>
+              <a href="https://www.linkedin.com/in/sarthak-bhatt-24b16624b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
               <LinkedInIcon className="text-white cursor-pointer" />
+              </a>
+              <a href="https://www.goodreads.com/liszt
+">
+
               <MenuBookIcon className="text-white cursor-pointer" />
+              </a>
               <InstagramIcon className="text-white cursor-pointer" />
             </Box>
           </Box>
