@@ -16,21 +16,23 @@ import About from "../ClientComonents/About";
 import Experiance from "../ClientComonents/Experiance";
 import Project from "../ClientComonents/Project";
 
-
 const Meat = () => {
-  
   return (
     <Grid container spacing={1}>
       <Grid item xl={6} md={6} lg={6} sm={12} className="relative">
-        <div className="static lg:fixed">
+        <div className="static lg:fixed max-w-xl">
           <Box className="w-full md:p-14 p-4 flex flex-col items-start">
             <h1 className="text-white">Sarthak Bhatt</h1>
 
-            <h3 className="text-white">Engineer with 1 year experiance </h3>
+            <h3 className="text-white">
+              Building Personalization & Analytics Systems for the Modern
+              Web{" "}
+            </h3>
 
             <p style={{ color: "#7B899D" }}>
-              I build pixel-perfect, engaging, and accessible digital
-              experiences.
+              Focused on customer journey orchestration, experimentation,
+              analytics, and data engineering across the Adobe Experience Cloud
+              stack.
             </p>
           </Box>
 
@@ -44,16 +46,16 @@ const Meat = () => {
             </Box>
             <Box className="my-10 w-full md:p-14 p-4  flex gap-6 ">
               <a href="https://github.com/Saintcyr77">
-
-              <GitHubIcon className="text-white cursor-pointer" />
+                <GitHubIcon className="text-white cursor-pointer" />
               </a>
               <a href="https://www.linkedin.com/in/sarthak-bhatt-24b16624b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-              <LinkedInIcon className="text-white cursor-pointer" />
+                <LinkedInIcon className="text-white cursor-pointer" />
               </a>
-              <a href="https://www.goodreads.com/liszt
-">
-
-              <MenuBookIcon className="text-white cursor-pointer" />
+              <a
+                href="https://www.goodreads.com/liszt
+"
+              >
+                <MenuBookIcon className="text-white cursor-pointer" />
               </a>
               <InstagramIcon className="text-white cursor-pointer" />
             </Box>
@@ -76,24 +78,26 @@ const Meat = () => {
           id="about"
         >
           <p style={{ color: "#7B899D" }} className="p-2">
-            I first started programming in java in my 10th grade, 11 and 12th
-            were spent on C and C++
+            I work in technical consulting with a focus on analytics,
+            experimentation, implementation engineering, and digital experience
+            platforms. Most of my work involves debugging integrations, solving
+            implementation issues, working with APIs, and building reliable
+            data-driven solutions using Python, SQL, and JavaScript.
           </p>
           <p style={{ color: "#7B899D" }} className="p-2">
-            My Enginerring made me forget everything. So now i am a Frontend
-            Developer who create large Scalable apps on React and Next JS with
-            Typescript and Javascript
+            I enjoy working on complex technical problems related to customer
+            journeys, personalization, and web technologies.{" "}
           </p>
           <p style={{ color: "#7B899D" }} className="p-2">
-            In my Free Time I Like to read military theory books, watch horror
-            movies and take long walks
+            Outside of work, I spend most of my time reading military theory and
+            history, watching horror films, and going on long walks.
           </p>
         </Box>
 
         <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">
           Experiance
         </span>
-        <a href="https://credextechnology.com/">
+        <a href="https://credextechnology.com/" target="_blank">
           <Box
             className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
             id="exp"
@@ -104,7 +108,6 @@ const Meat = () => {
                 backgroundColor: "rgba(255, 255, 255, 0.008)",
                 width: "100%",
               },
-             
             }}
           >
             <Box
@@ -120,7 +123,7 @@ const Meat = () => {
 
               <Box>
                 <div className="flex text-white font-bold mb-2 gap-2">
-                  <p>Associate Software Developer. Credex Technology</p>
+                  <p>Associate Software Developer | Credex Technology</p>
                   <ArrowOutwardIcon sx={{ color: "#fff" }} />
                 </div>
 
@@ -146,21 +149,72 @@ const Meat = () => {
           </Box>
         </a>
 
-          <a href="/resume.pdf">
-        <Box className="w-full md:p-14 p-6 flex gap-2 mb-4">
+        <a href="https://www.adobe.com/home" target="_blank">
+          <Box
+  className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
+  id="exp"
+  sx={{
+    "&:hover": {
+      boxShadow:
+        "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+      backgroundColor: "rgba(255, 255, 255, 0.008)",
+      width: "100%",
+    },
+  }}
+>
+  <Box
+    className="flex gap-3 text-white"
+    sx={{
+      "@media(max-width:600px)": {
+        display: "flex",
+        flexDirection: "column",
+      },
+    }}
+  >
+    <p className="w-100 whitespace-nowrap">2024 - Present</p>
 
-          <p className="font-bold text-white cursor-pointer">
-            View Full Resume
-          </p>
+    <Box>
+      <div className="flex text-white font-bold mb-2 gap-2">
+        <p>Senior Product Consultant | Adobe</p>
+        <ArrowOutwardIcon sx={{ color: "#fff" }} />
+      </div>
 
-          <ArrowOutwardIcon sx={{ color: "#fff" }} />
-        </Box>
-          </a>
+      <div>
+        <p className="mb-4">
+            Focused on AEP, Adobe Target, and Adobe Analytics implementations across
+  enterprise digital platforms. Regularly involved in integrations,
+  implementation architecture, API debugging, experimentation workflows,
+  and troubleshooting complex customer experience solutions.
+        </p>
+
+        <div className="flex gap-2 p-1 my-3 flex-wrap">
+          <Button variant="outlined">Python</Button>
+          <Button variant="outlined">SQL</Button>
+          <Button variant="outlined">Javascript</Button>
+          <Button variant="outlined">AEP</Button>
+          <Button variant="outlined">Adobe Target</Button>
+          <Button variant="outlined">Analytics</Button>
+        </div>
+      </div>
+    </Box>
+  </Box>
+</Box>
+        </a>
+
+        <a href="/resume.pdf">
+          <Box className="w-full md:p-14 p-6 flex gap-2 mb-4">
+            <p className="font-bold text-white cursor-pointer">
+              View Full Resume
+            </p>
+
+            <ArrowOutwardIcon sx={{ color: "#fff" }} />
+          </Box>
+        </a>
 
         <span className=" md:p-14 md:hidden block p-6 text-white cursor-pointer font-bold">
           Projects
         </span>
-        <a href="https://beer-app-proj.netlify.app/">
+        {/* <a href="https://beer-app-proj.netlify.app/">
           <Box
             className="flex flex-col items-start cursor-pointer mb-4 w-full md:p-14 p-6"
             id="project"
@@ -208,9 +262,9 @@ const Meat = () => {
               </Box>
             </Box>
           </Box>
-        </a>
+        </a> */}
 
-        <a href="https://nqueens-viz.netlify.app/">
+        {/* <a href="https://nqueens-viz.netlify.app/">
           <Box
             className="w-full md:p-14 p-6 flex flex-col items-start cursor-pointer mb-4"
             sx={{
@@ -256,7 +310,7 @@ const Meat = () => {
               </Box>
             </Box>
           </Box>
-        </a>
+        </a> */}
 
         <p
           className="w-full p-14 md:text-base text-sm"
